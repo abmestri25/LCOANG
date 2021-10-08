@@ -1,0 +1,15 @@
+<div class="card text-center">
+    <div class="card-body text-center">
+        <img width="150" height="150" class="rounded-circle img-thumbnail border-danger" [src]="user.avatar_url" alt="">
+    </div>
+    <div class="card-title text-primary text-center">
+            <h3>{{user.name}}</h3>
+    </div>
+    <div class="card-text text-center py-3 mx-2">
+        <h5>Bio :  {{user.bio}}</h5>
+        <h5>Blog :  {{user.blog}}</h5>
+        <h5>Updated At :  {{user.updated_at |date}}</h5>
+    </div>
+
+    
+</div>

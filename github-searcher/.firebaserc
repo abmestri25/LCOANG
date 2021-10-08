@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "github-searcher-26627": {
+      "hosting": {
+        "github-searcher": [
+          "github-searcher-26627"
+        ]
+      }
+    }
+  }
+}

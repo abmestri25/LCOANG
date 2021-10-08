@@ -1,0 +1,23 @@
+<div class="container w-50 mt-5 text-center">
+  <div class="text-center display-3 m-3 text-white">
+    Word Limit : {{ limit }}
+  </div>
+</div>
+
+<div class="container d-flex flex-column justify-content-center">
+  <input
+    type="range"
+    min="1"
+    max="50"
+    value="{{ limit }}"
+    class="slider form-control-range"
+    (change)="handleSlideChange($event.target.value)"
+  />
+  <button (click) ="generate()" class="btn btn-info mx-auto">Generate Words</button>
+
+  <div class="card card-body">
+    <p class="display-4"> {{words}} </p>
+  </div>
+</div>
+
+

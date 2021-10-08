@@ -1,0 +1,25 @@
+<div class="container py-3">
+    <h3>{{header}}</h3>
+    <form (ngSubmit) ="onSubmit(f)" #f="ngForm" >
+        <div class="form-group">
+            <label for="">ID</label>
+            <input type="number" class="form-control" placeholder="Enter Employee ID" name="id" [ngModel] = "employee.id" >
+        </div>
+        <div class="form-group">
+            <label for="">Name</label>
+            <input type="text" class="form-control" placeholder="Enter Employee Name" name="name" [ngModel] = "employee.name" >
+        </div>
+        <div class="form-group">
+            <label for="">Email</label>
+            <input type="email" class="form-control" placeholder="Enter Employee Email" name="email" [ngModel] = "employee.email" >
+        </div>
+        <div class="form-group">
+            <label for="">Phone</label>
+            <input type="number" class="form-control" placeholder="Enter Employee Phone" name="phone" [ngModel] = "employee.phone" >
+        </div>
+        <div class="form-group">
+            <input type="submit" class="form-control bg-primary text-white" value="{{button}}">
+        </div>
+        
+    </form>
+</div>
